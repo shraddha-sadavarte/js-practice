@@ -1,3 +1,10 @@
+//spread operator(...)
+//spread operator is used for copy the array and object values to another array and object
+var arr = [1,2,3,4,5];
+var arr1 = [...arr];
+console.log(arr);
+console.log(arr1);
+
 //heigher order functions
 //which accepts function in parmeter or return a function or return both
 
