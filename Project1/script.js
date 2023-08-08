@@ -3,10 +3,34 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-function circleMouseFollower() {
-    window.addEventListener("mousemove", function(dets){
-        document.querySelector("#minicircle").style.transform = `transform(${dets.clientX}px, ${dets.clientY}px)`
+function firstPageAnim(){
+    var tl = gsap.timeline();
+
+    tl.from(".nav", {
+        y: '-10',
+        opacity: 0,
+        duration: 1.5,
+        ease: Expo.easeInOut
     })
+
+      .to(".boundinglem", {
+        y: 0,
+        duration: 1.3,
+        ease: Expo.easeInOut,
+        delay: -.1,
+        stagger: .2
+    })
+
+    .from(".herofooter", {
+        y: -10,
+        opacity: 0,
+        duration: 1.2,
+        delay: -.1,
+        ease: Expo.easeInOut
+    })
+
+    
+
 }
 
-circleMouseFollower();
+firstPageAnim();

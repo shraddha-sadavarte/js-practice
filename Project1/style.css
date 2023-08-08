@@ -76,6 +76,9 @@ html.body{
 
 .blocktext{
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .blocktext h5{
@@ -86,6 +89,9 @@ html.body{
 .chotiheadings{
     margin-top: 100px;
     padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .chotiheadings h5{
