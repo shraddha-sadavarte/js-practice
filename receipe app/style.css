@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+
+body{
+    background-color: #2b1d0f;
+    color: white;
+}
+
+header nav{
+    background-color: #212121;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav form{
+    display: flex;
+    justify-content: center;
+}
+
+form input[type = "text"]{
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+form input[type = "text"], button[type="submit"]{
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button[type = "submit"]{
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+form button[type = "submit"]:hover{
+    background-color: #ff5c5c;
+}
+
+/* main section  */
+.receipe-container{
+    text-align: center;
+    margin: 10px auto;
+    /* padding: 20px; */
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 40px;
+}
+
+.recepie{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgb(73, 72, 72);
+    
+}
+
+.img-container{
+    height: 300px;
+    width: 250px;
+}
+
+
+
+
+
+/*responsive code*/
+@media screen and (max-width:600px){
+    header nav{
+        flex-direction: column;
+    }
+
+    header nav form{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
