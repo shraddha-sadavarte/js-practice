@@ -159,4 +159,15 @@ body::-webkit-scrollbar-track{
         width: 80%;
         margin-top: 20px;
     }
+
+    /*receipe details*/
+    .recepie-details{
+        height: 40%;
+        width: 60%;
+    }
+
+    .recepie-close-btn{
+        position: absolute;
+        left: 85%;
+    }
 }
