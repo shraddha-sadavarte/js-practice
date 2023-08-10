@@ -51,30 +51,102 @@ form button[type = "submit"]:hover{
 .receipe-container{
     text-align: center;
     margin: 10px auto;
-    /* padding: 20px; */
+    padding: 20px;
     display: grid;
     width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 40px;
-}
-
-.recepie{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    color: black;
-    border-radius: 6px;
-    box-shadow: 0 5px 10px rgb(73, 72, 72);
     
 }
 
 .img-container{
-    height: 300px;
-    width: 250px;
+    height: 250px;
+    border-radius: 10px;
 }
 
+/* recepie details */
+.recepie-details{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    width: 40%;
+    height: 60%;
+    font-size: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    background-color: #825e3b;
+    transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
+}
 
+.recepie-details-container{
+    padding: 30px;
+}
 
+.receipeName{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.ingrediantList li{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.receipeInstructions p{
+    line-height: 30px;
+    white-space: pre-line;
+}
+
+.receipeName,
+.ingrediantList,
+.receipeInstructions{
+    margin-bottom: 20px;
+}
+
+.recepie-close-btn{
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* Adding scroll bar to receipe details popup*/
+.recepie-details::-webkit-scrollbar{
+    width: 10px;
+}
+
+.recepie-details::-webkit-scrollbar-thumb{
+    background-color: #b5b5ba;
+    border-radius: 16px;
+    --webkit-border-radius: 16px;
+}
+
+/* Scroll bar in body*/
+body::-webkit-scrollbar{
+    width: 16px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #a1a1a7;
+    border-radius: 16px;
+    --webkit-border-radius: 16px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #535355;
+}
 
 
 /*responsive code*/
