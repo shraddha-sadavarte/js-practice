@@ -26,3 +26,9 @@ html, body{
     width: 100%;
     background-color: rgb(152, 220, 135);
 }
+
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(140, 13, 56);
+}
